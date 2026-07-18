@@ -1,6 +1,9 @@
 function Hero() {
   return (
-    <section className="min-h-[90vh] flex items-center justify-center px-6">
+    <section
+  id="home"
+  className="min-h-[90vh] flex items-center justify-center px-6"
+>
       <div className="text-center max-w-3xl">
 
         <h2 className="text-cyan-400 text-xl font-semibold">
