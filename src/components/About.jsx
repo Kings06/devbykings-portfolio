@@ -41,7 +41,7 @@ function About() {
 
             <div className="space-y-4">
 
-              <p><strong>Name:</strong> Kings Ebuka</p>
+              <p><strong>Name:</strong> Ebuka Kings</p>
 
               <p><strong>Country:</strong> Nigeria 🇳🇬</p>
 

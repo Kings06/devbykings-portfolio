@@ -2,41 +2,69 @@ function Hero() {
   return (
     <section
   id="home"
-  className="min-h-[90vh] flex items-center justify-center px-6"
+  className="min-h-screen flex items-center bg-gray-900 px-8"
 >
-      <div className="text-center max-w-3xl">
+  <div className="max-w-7xl mx-auto w-full">
 
-        <h2 className="text-cyan-400 text-xl font-semibold">
+    <div className="grid md:grid-cols-2 gap-16 items-center">
+
+      {/* Left */}
+
+      <div>
+
+        <p className="text-cyan-400 text-xl mb-4">
           👋 Hello, I'm
-        </h2>
+        </p>
 
-        <h1 className="text-6xl font-bold mt-2">
+        <h1 className="text-6xl font-bold leading-tight">
           DevByKings
         </h1>
 
-        <h3 className="text-3xl text-gray-300 mt-4">
+        <h2 className="text-3xl text-gray-300 mt-4">
           Frontend Developer
-        </h3>
+        </h2>
 
-        <p className="mt-6 text-gray-400 leading-8">
-          I build modern, responsive, and user-friendly web
-          applications using React, JavaScript, and Tailwind CSS.
+        <p className="mt-8 text-gray-400 leading-8 max-w-xl">
+
+          I build modern, responsive,
+          and user-friendly web applications
+          using React, JavaScript and Tailwind CSS.
+
         </p>
 
-        <div className="mt-10 flex justify-center gap-4">
+        <div className="flex gap-4 mt-10">
 
-          <button className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold transition">
-            View Projects
-          </button>
+          <a
+  href="#projects"
+  className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold transition"
+>
+  View Projects
+</a>
 
           <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg transition">
-            Contact Me
+            Download CV
           </button>
 
         </div>
 
       </div>
-    </section>
+
+      {/* Right */}
+
+      <div className="flex justify-center">
+
+        <div className="w-80 h-80 rounded-full bg-cyan-500 flex items-center justify-center text-8xl shadow-2xl">
+
+          KE
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
   );
 }
 

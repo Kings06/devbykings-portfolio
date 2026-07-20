@@ -1,19 +1,29 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+
+import { RiTailwindCssFill } from "react-icons/ri";
+
 function Skills() {
   const skills = [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "React",
-    "Tailwind CSS",
-    "Git",
-    "GitHub",
-    "Responsive Design",
+    { name: "HTML5", icon: <FaHtml5 className="text-5xl text-orange-500" /> },
+    { name: "CSS3", icon: <FaCss3Alt className="text-5xl text-blue-500" /> },
+    { name: "JavaScript", icon: <FaJs className="text-5xl text-yellow-400" /> },
+    { name: "React", icon: <FaReact className="text-5xl text-cyan-400" /> },
+    { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-5xl text-sky-400" /> },
+    { name: "Git", icon: <FaGitAlt className="text-5xl text-orange-600" /> },
+    { name: "GitHub", icon: <FaGithub className="text-5xl" /> },
+    { name: "Responsive Design", icon: "📱" },
   ];
 
   return (
     <section id="skills" className="py-24 bg-gray-900 text-white px-6">
       <div className="max-w-6xl mx-auto">
-
         <h2 className="text-4xl font-bold text-cyan-400 text-center mb-12">
           My Skills
         </h2>
@@ -21,16 +31,19 @@ function Skills() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {skills.map((skill) => (
             <div
-              key={skill}
-              className="bg-gray-800 p-6 rounded-xl text-center hover:bg-cyan-500 hover:text-black transition duration-300 cursor-pointer"
+              key={skill.name}
+              className="bg-gray-800 p-6 rounded-xl text-center hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/20 transition duration-300"
             >
-              <h3 className="font-semibold text-lg">
-                {skill}
+              <div className="flex justify-center mb-4">
+                {skill.icon}
+              </div>
+
+              <h3 className="font-semibold">
+                {skill.name}
               </h3>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
