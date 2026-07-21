@@ -1,70 +1,83 @@
+import { TypeAnimation } from "react-type-animation";
+import Button from "./Button";
+
 function Hero() {
   return (
     <section
-  id="home"
-  className="min-h-screen flex items-center bg-gray-900 px-8"
->
-  <div className="max-w-7xl mx-auto w-full">
+      id="home"
+      className="min-h-screen flex items-center justify-center px-6 bg-gray-900 text-white"
+    >
+      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
 
-    <div className="grid md:grid-cols-2 gap-16 items-center">
-
-      {/* Left */}
-
-      <div>
-
-        <p className="text-cyan-400 text-xl mb-4">
+        <div className="flex-1 text-center md:text-left">
+          <p className="text-cyan-400 text-lg mb-4">
           👋 Hello, I'm
         </p>
 
-        <h1 className="text-6xl font-bold leading-tight">
-          DevByKings
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+            Ebuka Kings
+          </span>
         </h1>
 
-        <h2 className="text-3xl text-gray-300 mt-4">
-          Frontend Developer
-        </h2>
+        <h2 className="text-2xl md:text-4xl mt-6 font-semibold text-gray-300">
+  <TypeAnimation
+    sequence={[
+      "Frontend Developer",
+      2000,
+      "React Developer",
+      2000,
+      "Computer Scientist",
+      2000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+  />
+</h2>
 
-        <p className="mt-8 text-gray-400 leading-8 max-w-xl">
-
-          I build modern, responsive,
-          and user-friendly web applications
+        <p className="mt-8 max-w-2xl mx-auto text-gray-400 text-lg leading-8">
+          I build modern, responsive and user-friendly web applications
           using React, JavaScript and Tailwind CSS.
-
+          I enjoy turning ideas into clean, interactive experiences.
         </p>
 
-        <div className="flex gap-4 mt-10">
+         <div className="flex flex-wrap gap-4 mt-10 justify-center md:justify-start">
 
-          <a
-  href="#projects"
-  className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold transition"
->
-  View Projects
-</a>
+  <Button href="#projects">
+    View Projects
+  </Button>
 
-          <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg transition">
-            Download CV
-          </button>
+  <Button
+    href="#contact"
+    variant="outline"
+  >
+    Contact Me
+  </Button>
 
-        </div>
+  <Button
+    href="/Ebuka_Kings_CV.docx"
+  >
+    Download CV
+  </Button>
 
-      </div>
-
-      {/* Right */}
-
-      <div className="flex justify-center">
-
-        <div className="w-80 h-80 rounded-full bg-cyan-500 flex items-center justify-center text-8xl shadow-2xl">
-
-          KE
+</div>
 
         </div>
+        <div className="flex-1 flex justify-center">
 
-      </div>
+  <div className="w-72 h-72 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
 
+    <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-7xl">
+      👨‍💻
     </div>
 
   </div>
-</section>
+
+</div>
+
+      </div>
+    </section>
   );
 }
 

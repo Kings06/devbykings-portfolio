@@ -19,7 +19,7 @@ function Contact() {
         <div className="grid md:grid-cols-3 gap-6">
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:devbykings06@gmail.com"
             className="bg-gray-800 rounded-xl p-6 hover:bg-cyan-500 transition"
           >
             <h3 className="text-xl font-bold mb-2">📧 Email</h3>
@@ -37,13 +37,13 @@ function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/ebuka-kings"
             target="_blank"
             rel="noreferrer"
             className="bg-gray-800 rounded-xl p-6 hover:bg-cyan-500 transition"
           >
             <h3 className="text-xl font-bold mb-2">💼 LinkedIn</h3>
-            <p>Coming Soon</p>
+            <p>Ebuka Kings</p>
           </a>
 
         </div>
