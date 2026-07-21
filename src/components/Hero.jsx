@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import Button from "./Button";
+import avatar from "../assets/avatar.png";
 
 function Hero() {
   return (
@@ -56,7 +57,7 @@ function Hero() {
   </Button>
 
   <Button
-    href="/Ebuka_Kings_CV.docx"
+    href="/Ebuka_Kings_CV.pdf"
   >
     Download CV
   </Button>
@@ -66,11 +67,13 @@ function Hero() {
         </div>
         <div className="flex-1 flex justify-center">
 
-  <div className="w-72 h-72 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
+  <div className="w-72 h-72 rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
 
-    <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-7xl">
-      👨‍💻
-    </div>
+    <img
+      src={avatar}
+      alt="Ebuka Kings"
+      className="w-full h-full rounded-full object-cover float-animation"
+    />
 
   </div>
 

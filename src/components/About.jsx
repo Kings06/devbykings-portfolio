@@ -2,6 +2,7 @@ function About() {
   return (
     <section
       id="about"
+      data-aos="fade-up"
       className="py-24 bg-gray-800 text-white px-6"
     >
       <div className="max-w-6xl mx-auto">

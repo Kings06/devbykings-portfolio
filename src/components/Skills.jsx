@@ -22,7 +22,7 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-gray-900 text-white px-6">
+    <section id="skills" data-aos="fade-right" className="py-24 bg-gray-900 text-white px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-cyan-400 text-center mb-12">
           My Skills

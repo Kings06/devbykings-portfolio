@@ -2,6 +2,7 @@ function Contact() {
   return (
     <section
       id="contact"
+      data-aos="fade-left"
       className="py-24 bg-gray-900 text-white px-6"
     >
       <div className="max-w-5xl mx-auto text-center">

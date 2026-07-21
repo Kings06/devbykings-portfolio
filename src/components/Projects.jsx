@@ -5,6 +5,7 @@ function Projects() {
   return (
     <section
       id="projects"
+      data-aos="zoom-in"
       className="py-24 bg-gray-800 text-white px-6"
     >
       <div className="max-w-6xl mx-auto">
