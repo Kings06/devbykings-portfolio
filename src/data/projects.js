@@ -1,9 +1,12 @@
+import portfolioImage from "../assets/projects/devbykings-portfolio.png";
+
 const projects = [
   {
     title: "DevByKings Portfolio",
     description:
       "A modern portfolio website built with React and Tailwind CSS.",
-    tech: "React • Tailwind CSS • Vite",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    image: portfolioImage,
     github: "#",
     live: "#",
   },
