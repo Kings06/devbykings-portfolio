@@ -7,7 +7,7 @@ const projects = [
       "A modern portfolio website built with React and Tailwind CSS.",
     tech: ["React", "Tailwind CSS", "Vite"],
     image: portfolioImage,
-    github: "#",
+    github: "https://github.com/Kings06/devbykings-portfolio",
     live: "#",
   },
   {

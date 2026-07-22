@@ -21,20 +21,20 @@ function About() {
 
             <p className="text-gray-300 leading-8">
               I'm a Computer Science graduate and an aspiring Frontend
-              Developer passionate about building modern,
-              responsive, and user-friendly web applications.
+              Developer passionate about building modern, responsive,
+              and user-friendly web applications.
             </p>
 
             <p className="text-gray-300 leading-8 mt-6">
-              I'm currently mastering React, Tailwind CSS,
-              and JavaScript while building real-world projects
-              that strengthen my problem-solving skills and
-              prepare me for professional software development.
+              I'm currently deepening my skills in React, Tailwind CSS,
+              and JavaScript while building real-world projects that
+              strengthen my problem-solving skills and prepare me for
+              professional software development.
             </p>
           </div>
 
           {/* Right Side */}
-          <div className="bg-gray-900 rounded-xl p-8 shadow-lg">
+          <div className="bg-gray-900 rounded-xl p-8 shadow-lg border border-white/5 hover:border-cyan-500/30 transition duration-300">
 
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">
               Quick Facts
@@ -42,15 +42,32 @@ function About() {
 
             <div className="space-y-4">
 
-              <p><strong>Name:</strong> Ebuka Kings</p>
+              <p>
+                <span className="font-semibold text-gray-400">Name:</span>{" "}
+                Ebuka Kings
+              </p>
 
-              <p><strong>Country:</strong> Nigeria 🇳🇬</p>
+              <p>
+                <span className="font-semibold text-gray-400">Country:</span>{" "}
+                Nigeria 🇳🇬
+              </p>
 
-              <p><strong>Role:</strong> Frontend Developer</p>
+              <p>
+                <span className="font-semibold text-gray-400">Role:</span>{" "}
+                Frontend Developer
+              </p>
 
-              <p><strong>Learning:</strong> React + Tailwind CSS</p>
+              <p>
+                <span className="font-semibold text-gray-400">Learning:</span>{" "}
+                React + Tailwind CSS
+              </p>
 
-              <p><strong>Available for:</strong> Internship & Junior Roles</p>
+              <p>
+                <span className="font-semibold text-gray-400">
+                  Available for:
+                </span>{" "}
+                Internship & Junior Roles
+              </p>
 
             </div>
 

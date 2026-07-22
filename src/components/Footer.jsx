@@ -12,7 +12,7 @@ function Footer() {
             </h2>
 
             <p className="leading-relaxed">
-              A frontend developer passionate about building
+              Frontend developer passionate about building
               responsive, modern, and user-friendly web experiences.
             </p>
           </div>
@@ -72,14 +72,14 @@ function Footer() {
                 href="https://github.com/Kings06"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 GitHub
               </a>
 
               <a
-                href="mailto:kennethkings06@gmail.com"
-                className="hover:text-cyan-400 transition"
+                href="mailto:devbykings06@gmail.com"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 Email Me
               </a>
@@ -88,7 +88,7 @@ function Footer() {
                 href="https://linkedin.com/in/ebuka-kings"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 LinkedIn
               </a>

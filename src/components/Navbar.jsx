@@ -17,7 +17,7 @@ function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-cyan-400">
+        <h1 className="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition">
           DevByKings
         </h1>
 
@@ -27,7 +27,7 @@ function Navbar() {
             <li key={link.name}>
               <a
                 href={link.href}
-                className="hover:text-cyan-400 transition"
+                className="text-gray-200 hover:text-cyan-400 transition-colors duration-300"
               >
                 {link.name}
               </a>
@@ -47,7 +47,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-800 px-6 pb-6">
+        <div className="md:hidden bg-gray-900/90 backdrop-blur-lg border-t border-white/10 px-6 pb-6">
           {navLinks.map((link) => (
             <a
               key={link.name}

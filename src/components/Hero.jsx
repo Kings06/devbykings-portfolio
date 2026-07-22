@@ -6,8 +6,9 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-start md:items-center justify-center px-6 pt-28 pb-16 bg-gray-900 text-white"
+      className="relative min-h-screen flex items-start md:items-center justify-center px-6 pt-28 pb-16 bg-gray-900 text-white overflow-hidden"
     >
+<div className="absolute top-32 left-1/2 -translate-x-1/2 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
 
         <div className="flex-1 text-center md:text-left">
@@ -38,10 +39,10 @@ function Hero() {
 </h2>
 
         <p className="mt-8 max-w-2xl mx-auto text-gray-400 text-lg leading-8">
-          I build modern, responsive and user-friendly web applications
-          using React, JavaScript and Tailwind CSS.
-          I enjoy turning ideas into clean, interactive experiences.
-        </p>
+  I build modern, responsive, and user-friendly web applications
+  using React, JavaScript, and Tailwind CSS. I enjoy turning ideas
+  into clean, interactive experiences that solve real-world problems.
+</p>
 
          <div className="flex flex-wrap gap-4 mt-10 justify-center md:justify-start">
 
