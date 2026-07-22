@@ -16,3 +16,7 @@ html {
 .float-animation {
   animation: float 4s ease-in-out infinite;
 }
+html,
+body {
+  overflow-x: hidden;
+}

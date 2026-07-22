@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6 bg-gray-900 text-white"
+      className="min-h-screen flex items-start md:items-center justify-center px-6 pt-28 pb-16 bg-gray-900 text-white"
     >
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
 
@@ -16,7 +16,7 @@ function Hero() {
         </p>
 
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <span className="text-cyan-400">
             Ebuka Kings
           </span>
         </h1>
@@ -67,7 +67,7 @@ function Hero() {
         </div>
         <div className="flex-1 flex justify-center">
 
-  <div className="w-72 h-72 rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
+  <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
 
     <img
       src={avatar}
