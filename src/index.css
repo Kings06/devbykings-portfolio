@@ -20,3 +20,30 @@ html,
 body {
   overflow-x: hidden;
 }
+/* Gradient text with fallback */
+.gradient-text {
+  color: #22d3ee;
+  background: linear-gradient(
+    to right,
+    #22d3ee,
+    #3b82f6,
+    #a855f7
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.section-heading {
+  color: #22d3ee;
+  background: linear-gradient(
+    to right,
+    #22d3ee,
+    #3b82f6,
+    #a855f7
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}

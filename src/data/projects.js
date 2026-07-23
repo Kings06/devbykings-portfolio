@@ -10,20 +10,19 @@ const projects = [
     github: "https://github.com/Kings06/devbykings-portfolio",
     live: "#",
   },
+ {
+  title: "More Projects Coming Soon",
+  description:
+    "I'm currently building more frontend projects to expand my portfolio and demonstrate my skills.",
+  tech: ["React", "JavaScript", "Tailwind CSS"],
+  placeholder: true,
+},
   {
-    title: "Coming Soon...",
+    title: "New Project in Progress",
     description:
-      "This project will be added as I continue my frontend journey.",
+      "Another project is currently in development and will be showcased here soon.",
     tech: "Future Project",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Coming Soon...",
-    description: "Another amazing project will live here.",
-    tech: "Future Project",
-    github: "#",
-    live: "#",
+    placeholder: true,
   },
 ];
 

@@ -7,11 +7,14 @@ function Footer() {
 
           {/* Brand */}
           <div>
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
-              DevByKings
-            </h2>
+            <a
+  href="#home"
+  className="gradient-text text-2xl font-bold hover:opacity-80 transition-opacity duration-300"
+>
+  DevByKings
+</a>
 
-            <p className="leading-relaxed">
+            <p className="leading-relaxed max-w-sm">
               Frontend developer passionate about building
               responsive, modern, and user-friendly web experiences.
             </p>
@@ -26,35 +29,35 @@ function Footer() {
             <div className="flex flex-col gap-3">
               <a
                 href="#home"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 Home
               </a>
 
               <a
                 href="#about"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 About
               </a>
 
               <a
                 href="#skills"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 Skills
               </a>
 
               <a
                 href="#projects"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 Projects
               </a>
 
               <a
                 href="#contact"
-                className="hover:text-cyan-400 transition"
+                className="hover:text-cyan-400 transition-colors duration-300"
               >
                 Contact
               </a>

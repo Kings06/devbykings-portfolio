@@ -7,7 +7,8 @@ function About() {
     >
       <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-4xl font-bold text-cyan-400 text-center mb-12">
+        {/* Section Heading */}
+        <h2 className="section-heading text-4xl font-bold text-center mb-12">
           About Me
         </h2>
 
@@ -34,7 +35,7 @@ function About() {
           </div>
 
           {/* Right Side */}
-          <div className="bg-gray-900 rounded-xl p-8 shadow-lg border border-white/5 hover:border-cyan-500/30 transition duration-300">
+          <div className="bg-gray-900 rounded-xl p-8 border border-white/5 shadow-lg hover:border-cyan-500/30 hover:shadow-cyan-500/10 active:scale-[0.98] transition-all duration-300">
 
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">
               Quick Facts
@@ -43,22 +44,30 @@ function About() {
             <div className="space-y-4">
 
               <p>
-                <span className="font-semibold text-gray-400">Name:</span>{" "}
+                <span className="font-semibold text-gray-400">
+                  Name:
+                </span>{" "}
                 Ebuka Kings
               </p>
 
               <p>
-                <span className="font-semibold text-gray-400">Country:</span>{" "}
+                <span className="font-semibold text-gray-400">
+                  Country:
+                </span>{" "}
                 Nigeria 🇳🇬
               </p>
 
               <p>
-                <span className="font-semibold text-gray-400">Role:</span>{" "}
+                <span className="font-semibold text-gray-400">
+                  Role:
+                </span>{" "}
                 Frontend Developer
               </p>
 
               <p>
-                <span className="font-semibold text-gray-400">Learning:</span>{" "}
+                <span className="font-semibold text-gray-400">
+                  Focus:
+                </span>{" "}
                 React + Tailwind CSS
               </p>
 

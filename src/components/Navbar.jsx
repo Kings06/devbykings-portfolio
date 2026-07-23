@@ -17,9 +17,12 @@ function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition">
-          DevByKings
-        </h1>
+        <a
+  href="#home"
+  className="gradient-text text-2xl font-bold hover:opacity-80 transition-opacity duration-300"
+>
+  DevByKings
+</a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8">
@@ -39,6 +42,7 @@ function Navbar() {
         <button
           className="md:hidden text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -47,7 +51,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-900/90 backdrop-blur-lg border-t border-white/10 px-6 pb-6">
+        <div className="md:hidden bg-gray-800 border-t border-white/10 px-6 pb-6">
           {navLinks.map((link) => (
             <a
               key={link.name}

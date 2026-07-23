@@ -9,7 +9,7 @@ function Hero() {
       className="relative min-h-screen flex items-start md:items-center justify-center px-6 pt-28 pb-16 bg-gray-900 text-white overflow-hidden"
     >
 <div className="absolute top-32 left-1/2 -translate-x-1/2 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-16">
 
         <div className="flex-1 text-center md:text-left">
           <p className="text-cyan-400 text-lg mb-4">
@@ -17,10 +17,10 @@ function Hero() {
         </p>
 
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-          <span className="text-cyan-400">
-            Ebuka Kings
-          </span>
-        </h1>
+  <span className="gradient-text">
+    Ebuka Kings
+  </span>
+</h1>
 
         <h2 className="text-2xl md:text-4xl mt-6 font-semibold text-gray-300">
   <TypeAnimation
@@ -59,6 +59,7 @@ function Hero() {
 
   <Button
     href="/Ebuka_Kings_CV.pdf"
+    target="_blank"
   >
     Download CV
   </Button>
@@ -73,7 +74,7 @@ function Hero() {
     <img
       src={avatar}
       alt="Ebuka Kings"
-      className="w-full h-full rounded-full object-cover float-animation"
+      className="w-full h-full rounded-full object-cover float-animation transition-transform duration-300 hover:scale-105 active:scale-95"
     />
 
   </div>

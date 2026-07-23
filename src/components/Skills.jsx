@@ -27,7 +27,7 @@ function Skills() {
   return (
     <section id="skills" data-aos="fade-right" className="py-24 bg-gray-900 text-white px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-cyan-400 text-center mb-12">
+        <h2 className="section-heading text-4xl font-bold text-center mb-12">
           My Skills
         </h2>
 
@@ -35,13 +35,13 @@ function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group bg-gray-800 p-6 rounded-xl text-center border border-white/5 hover:border-cyan-500/30 hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+              className="group bg-gray-800 p-6 rounded-xl text-center border border-white/5 hover:border-cyan-500/30 hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/20 active:scale-[0.98] transition-all duration-300"
             >
               <div className="flex justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
                 {skill.icon}
               </div>
 
-              <h3 className="font-semibold">
+              <h3 className="font-semibold text-gray-200">
                 {skill.name}
               </h3>
             </div>

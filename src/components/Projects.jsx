@@ -1,4 +1,5 @@
- import projects from "../data/projects";
+import { FaRocket } from "react-icons/fa";
+import projects from "../data/projects";
 
 function Projects() {
   return (
@@ -9,7 +10,7 @@ function Projects() {
     >
       <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-4xl font-bold text-cyan-400 text-center mb-12">
+        <h2 className="section-heading text-4xl font-bold text-center mb-12">
           Projects
         </h2>
 
@@ -19,11 +20,11 @@ function Projects() {
 
             <div
               key={project.title}
-              className="group bg-gray-900 rounded-xl p-6 flex flex-col h-full border border-white/5 hover:border-cyan-500/30 hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-cyan-500/10"
-            >
+              className="group bg-gray-900 rounded-xl p-6 flex flex-col h-full border border-white/5 hover:-translate-y-2 hover:border-cyan-500/30 hover:shadow-lg hover:shadow-cyan-500/20 active:scale-[0.98] transition-all duration-300">
 
+              {/* Project Image */}
               {project.image && (
-                <div className="overflow-hidden rounded-lg mb-6 border border-white/5">
+                <div className="overflow-hidden rounded-lg mb-6">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -32,14 +33,24 @@ function Projects() {
                 </div>
               )}
 
-              <h3 className="text-xl md:text-2xl font-bold mb-4">
+              {/* Placeholder Icon */}
+              {project.placeholder && (
+                <div className="flex justify-center items-center h-48 mb-6 rounded-lg bg-gray-800 border border-white/5">
+                  <FaRocket className="text-6xl text-cyan-400" />
+                </div>
+              )}
+
+              {/* Title */}
+              <h3 className="text-2xl font-bold mb-4">
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 mb-6">
+              {/* Description */}
+              <p className="text-gray-400 mb-6 leading-7">
                 {project.description}
               </p>
 
+              {/* Tech */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {Array.isArray(project.tech) ? (
                   project.tech.map((tech) => (
@@ -51,33 +62,36 @@ function Projects() {
                     </span>
                   ))
                 ) : (
-                  <span className="text-cyan-400">
+                  <span className="bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full text-sm">
                     {project.tech}
                   </span>
                 )}
               </div>
 
-              <div className="flex gap-4 mt-auto pt-4">
+              {/* Project Buttons */}
+              {!project.placeholder && (
+                <div className="flex gap-4 mt-auto pt-4">
 
-                <a
-                  href={project.github}
-                  className="bg-cyan-500 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-600 hover:-translate-y-1 transition-all duration-300"
-                  target="_blank"
-rel="noreferrer"
-                >
-                  GitHub
-                </a>
+                  <a
+  href={project.github}
+  target="_blank"
+  rel="noreferrer"
+  className="inline-block bg-cyan-500 px-4 py-2 rounded-lg font-semibold shadow-lg shadow-cyan-500/20 hover:bg-cyan-600 hover:-translate-y-1 hover:shadow-cyan-500/40 active:scale-95 transition-all duration-300"
+>
+  GitHub
+</a>
 
-                <a
-                  href={project.live}
-                  className="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500 hover:text-white hover:-translate-y-1 transition-all duration-300"
-                  target="_blank"
-rel="noreferrer"
-                >
-                  Live Demo
-                </a>
+                  <a
+  href={project.live}
+  target="_blank"
+  rel="noreferrer"
+  className="inline-block border border-cyan-500 text-cyan-400 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500 hover:text-white hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95 transition-all duration-300"
+>
+  Live Demo
+</a>
 
-              </div>
+                </div>
+              )}
 
             </div>
 
