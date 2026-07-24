@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import Button from "./Button";
-import avatar from "../assets/avatar.png";
+import picture from "../assets/picture.png";
 
 function Hero() {
   return (
@@ -72,7 +72,7 @@ function Hero() {
   <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
 
     <img
-      src={avatar}
+      src={picture}
       alt="Ebuka Kings"
       className="w-full h-full rounded-full object-cover float-animation transition-transform duration-300 hover:scale-105 active:scale-95"
     />

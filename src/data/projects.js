@@ -8,7 +8,7 @@ const projects = [
     tech: ["React", "Tailwind CSS", "Vite"],
     image: portfolioImage,
     github: "https://github.com/Kings06/devbykings-portfolio",
-    live: "#",
+    live: "https://devbykings-portfolio.vercel.app",
   },
  {
   title: "More Projects Coming Soon",
